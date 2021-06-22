@@ -17,3 +17,14 @@ export default function FirstPost() {
     </Layout>
   );
 }
+
+export async function getServerSideProps(context) {
+  console.log("getServerSideProps() in first-post has called");
+  console.log(context);
+
+  return {
+    props: {
+      // props for your component
+    },
+  };
+}
